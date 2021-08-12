@@ -109,12 +109,13 @@ def generate_board(word_list):
 
 if __name__ == '__main__':
 
-    # Allow player to input words into list of words called given words
-    print(generate_board(get_words()))
+    # make a board based off of the combined area of all words given by player
+    game_grid = generate_board(get_words())
 
+    print('TEST: GRID APPEARANCE BELOW')
+    for x in range(0, len(game_grid)):
+        print(game_grid[x])
     # Generate board
     # Give player board to solve
     # Play game
     # End game when player solves board
-
-    pass
